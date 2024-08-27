@@ -1,0 +1,48 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.content{
+  width:50%;
+  height:50%;
+  
+  border:1px solid black;
+  text-align: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-wrap{
+   width:80%;
+  height:20%;
+  background:linear-gradient(
+    to bottom,
+    blue 0%,
+    blue 65%,
+    white 65%,
+    white 100%
+  );
+  text-align: center;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  background: linear-gradient( to bottom,
+    white 0%,
+    white 65%,
+    blue 65%,
+    blue 100%); 
+            -webkit-text-fill-color: transparent; 
+            -webkit-background-clip: text;
+  font-size: 4.5em;
+}
