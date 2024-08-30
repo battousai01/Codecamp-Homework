@@ -1,0 +1,49 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+.container{
+  width: 10%;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.image-container {
+    position: relative;
+    display: block;
+    border-bottom:px solid lightgray;
+    height: 80%;
+    width: 100%;
+    vertical-align:top;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.image-container img {
+   /* display: block; /* Ensure no extra space below the image */
+  vertical_align: top;
+}
+
+.image-container .icon-left{
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    /* Optional: Add padding or margin to adjust icon's position */
+}
+.image-container .icon-right {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 35px; /* Adjust size as needed */
+    height: 35px; /* Adjust size as needed */
+    /* Optional: Add padding or margin to adjust icon's position */
+}
