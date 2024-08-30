@@ -17,7 +17,7 @@ html,body {
 .image-container {
     position: relative;
     display: block;
-    border-bottom:px solid lightgray;
+    border-bottom:2px solid lightgray;
     height: 80%;
     width: 100%;
     vertical-align:top;
