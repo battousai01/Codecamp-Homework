@@ -1,0 +1,415 @@
+CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /*Color*/
+  .white{
+    color:white;
+  }
+  .bg-ligthgray{
+    background-color: rgb(229, 231, 231);
+  }
+  .gainsboro{
+    color: gainsboro;
+  }
+  body {
+    height: 100vh;
+    width: 100vw;
+    /*border: 1px solid blue;  */
+  }
+  .Nav-main-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    border: 2px solid rgb(192, 200, 192);
+  }
+  .nav{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid brown;*/
+  }
+  
+  .front-nav{
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    align-items: center ;
+    justify-content: space-evenly;
+    
+    /*border: 1px solid saddlebrown;*/  
+  }
+  .text-container {
+    display: flex; /* Optional: For layout control */
+    word-break:normal;
+}
+
+.bold {
+    font-weight: bold; /* Make the text bold */
+}
+
+.thin {
+    font-weight: 300; /* Use a lighter weight (adjust as needed) */
+    /* Alternatively, you could use 'font-weight: normal;' for regular text */
+}
+
+  .icon-container{
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-green path{
+    fill: green;
+  }
+  .front-nav svg{
+    width: 100%;
+    height: 100%;
+  }
+   
+  .middle-nav{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    vertical-align: bottom;
+    gap: 1em;
+    text-transform: uppercase;  
+    font-size: 20px;
+    /*border: 1px solid brown;*/
+  }
+  
+  .behind-nav{
+    text-transform: uppercase;  
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;   
+    align-items: center ;
+    gap: 1em;
+    font-size: 20px;  
+    
+    /*border: 1px solid sandybrown;*/
+  }
+  .behind-nav .icon-container{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrap-icon-container{
+    display: flex;
+    gap: 0.5em;
+  }
+
+  /*Icon*/
+ svg{
+  width: 100%;
+  height: 100%;
+ }
+ /*Header*/
+ header{
+  width: 100%;
+  display: flex;
+  justify-content: center ;
+  /*border: 1px solid blue;*/
+ }
+ h2{
+  width: 85%;
+  height: max-content;
+  padding: 2.5em 0;
+  /*border: 1px solid green;*/
+ }
+ /*Main Container*/
+ main{
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+  /*border: 1px solid yellowgreen;*/
+ }
+ .Main-Container{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /*background-color: lightgray;*/
+  /*border: 1px solid brown;*/
+ }
+ .Right-content{
+  width:50%;
+  display: flex;
+  justify-content: flex-end;
+  /*border: 1px solid darkblue;*/
+ }
+ .Left-content{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2em;
+  /*border: 1px solid darkorchid;*/
+  /*background-color: yellowgreen;*/
+ }
+ /*Card*/
+ .card-1{
+  width: 95%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  /*border: 1px solid darkblue;*/
+  border-radius: 10px;
+  background-color: white;  
+ }
+ 
+ .icon-container-incard{
+  width:20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*background-color: burlywood;*/
+ }
+ .card-1 svg{
+  width: 100%;
+  height: 100%;
+ }
+ .card-2{
+  width: 90%;
+  height: 45%;
+  display: flex;
+  /*border: 1px solid darkslategrey;*/
+  background-color: darkslateblue;
+ }
+ 
+ .icon-container-incard{
+  width:20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*  background-color: burlywood;*/
+ }
+ .subcard{
+  width: 35%;
+  height: 50%;
+  /*padding: 5em 2.5em;*/
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: linear-gradient(to top,blue,lightblue);
+  border-radius: 20px;
+ }
+ 
+ .wrap-subcard-content{
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  /*border: 1px solid gray;*/ 
+ }
+ .subcard-icon-container{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+ }
+ .subcard-icon-container svg{
+  height: 50%;
+  width: 50%;
+
+ }
+ .icon-blue path{
+  fill: blue;
+ }
+ .icon-orange path{
+  fill: orange;
+ }
+ .text-wrap{
+  color: gainsboro;
+  margin-top: 1em;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+ }
+/*Card Content*/
+ .card-content{
+  height: 70%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 3.5em;
+  /*border: 1px solid brown;*/
+ }
+ .wrap-card-content{
+  width: max-content;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid aqua;*/
+ }
+ /*Header Content*/
+ .Header-card-content{
+  font-size: 25px;
+ }
+ .tick-bar-container{
+  display: inline-flex;
+  margin-top: 1em;
+ }
+.circle-tick{
+  display: flex;
+  margin-right: 1em;
+  gap: 0.5em;
+}
+ .circle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(232, 214, 214);
+}
+
+.description {
+  color: rgb(162, 151, 151)
+}
+.active {
+  background-color: green;
+}
+
+/*Price*/
+.price{
+  font-size: 25px;
+  margin-top: 1.5em;
+  font-weight: lighter;
+} 
+.card-2{
+  width: 100%;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  /*border: 1px solid darkblue;*/
+  border-radius: 10px;
+  background-color: white;  
+}  
+
+/*Card-Rigt*/
+.card-right{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.wrap-right-card-content{
+  width: 90%;
+  height: 80%;
+  margin-top:   5em;
+  /*border: 1px solid brown;*/
+}
+.icon-right-card-container{
+  width: 20px;
+  height: 35px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /*border: 1px solid red;*/
+  border-radius: 5px;
+}
+.icon-right-card-container svg{
+  height: 50%;
+  width: 80%;
+}
+.right-upper-content{
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Right-content-header{
+  font-size: 35px;
+
+}
+.first-line-content{
+  font-size: 25px;
+  margin-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.second-line-content{
+  height: 2.5em;
+  width: 100%;
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  /*border: 1px solid green;*/
+}
+.second-line-content input{
+  width: 25em;
+  border:1px solid lightgreen;
+  border-radius: 5px;
+  padding-left: 1em;
+}
+.second-line-content button{
+  width: 15em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: green;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid green;
+}
+.third-line-content{
+  margin-top: 2em;
+  width: 100%;
+  border: 1px solid lightgray;
+}
+.Lower-Content{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:1.5em;
+  /*border: 1px solid green;*/
+}
+.Lower-Content-first-line{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*border: 1px solid red;*/
+}
+.Lower-Content-second-line-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Lower-Content-second-line-content button{
+  width: 100%;
+  height: 3em;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(52, 212, 52) ;
+  border: none;
+} 
