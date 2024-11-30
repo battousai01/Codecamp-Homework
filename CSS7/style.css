@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1152px;
+    height: 2041px;
+}
+/*Nav Bar*/
+.nav-bar-container {
+    height: 595px;
+}
