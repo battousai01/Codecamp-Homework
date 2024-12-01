@@ -3,23 +3,26 @@ body {
     padding: 0;
     width: 1152px;
     height: 2041px;
+    background: burlywood;
+}
+/*Personal Info*/
+.personal-info-container{
+    height: 595px;
+    background:green;
 }
 /*Nav Bar*/
 .nav-bar-container {
-    height: 100px;
+   
+    /*width: 100%;*/
     margin: 0 60px;
-    background:green;
-   /* display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 20px;
-    align-items: center;*/
+    background:blue;
+    margin-top: 25px;
     
 }
 .nav-bar-grid-container{
     
     list-style: none; /* Remove default bullets */
-    padding: 0;
-    margin: 0;
+    padding-top: 25px   ;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;      
@@ -43,3 +46,4 @@ body {
     font-size: 20px;
     color: black;
   }
+  
