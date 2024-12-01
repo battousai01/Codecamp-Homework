@@ -49,6 +49,7 @@ body {
   /*Text-Info*/
   .Info-Container{
     margin: 0 60px;
+    margin-top: 185px;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -58,8 +59,12 @@ body {
   .personal-info-container-text{
     grid-column: 2/8;
     background: purple;
-    padding: 0;
-    margin: 0;
+    display: grid; /* Use CSS Grid */
+    grid-template-rows: auto; /* Define rows dynamically */
+    border: 2px solid #333; /* Add border for the container */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    position: relative;
     
   }
   .personal-info-container-text h1{
@@ -67,13 +72,23 @@ body {
     font-style: bold;
     font-size: 44px;
     margin: 0;
+    margin-bottom:2px;
     padding: 0;  
-    width: 100%;
+    align-self: start;
+    
   } 
+  .personal-info-container-text h1::first-line {
+    line-height: 1; /* Decrease line-height of the first line */
+  }
+  
+  h1 {
+    line-height: 1.5; /* Default line-height for the rest of the text */
+  }
   .personal-info-container-text p{
     font-family: 'Heebo';
     font-style: normal;
     font-size: 16px;
+    margin-bottom: 35px;
   }
   /*Button*/
 
@@ -95,4 +110,11 @@ body {
     .button-link:hover {
         background-color: #0056b3; /* Darker color on hover */
       }
-      
+    .personal-info-container-image{
+        grid-column: 9/11;
+    }  
+    /*Post-Container*/
+    .Post-Container{
+        height: 395px;
+        background: lightblue;
+    }
