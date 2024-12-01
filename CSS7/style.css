@@ -46,4 +46,53 @@ body {
     font-size: 20px;
     color: black;
   }
-  
+  /*Text-Info*/
+  .Info-Container{
+    margin: 0 60px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;  
+    background: brown;
+  }
+  .personal-info-container-text{
+    grid-column: 2/8;
+    background: purple;
+    padding: 0;
+    margin: 0;
+    
+  }
+  .personal-info-container-text h1{
+    font-family: 'Heebo';
+    font-style: bold;
+    font-size: 44px;
+    margin: 0;
+    padding: 0;  
+    width: 100%;
+  } 
+  .personal-info-container-text p{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-size: 16px;
+  }
+  /*Button*/
+
+    .button-link {
+        display: inline-block; /* Allows setting width and height */
+        width: 208px; /* Set width */
+        height: 47px; /* Set height */
+        line-height: 47px; /* Vertically center text */
+        text-align: center; /* Horizontally center text */
+        text-decoration: none; /* Remove underline */
+        color: white; /* Button text color */
+        background-color: #FF4646; /* Button background color */
+        font-family: 'Heebo';
+        font-weight: medium;
+        font-size: 20px; /* Adjust font size */
+        transition: background-color 0.3s; /* Smooth hover effect */
+      }
+      
+    .button-link:hover {
+        background-color: #0056b3; /* Darker color on hover */
+      }
+      
