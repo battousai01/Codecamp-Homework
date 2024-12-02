@@ -185,7 +185,7 @@ body {
     }
     .right-content-container{
         grid-column: 7/12;
-      
         background: rgb(20, 196, 20);
-        
+        display: flex;
+        justify-content: center;
     }
