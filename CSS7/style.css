@@ -144,7 +144,7 @@ body {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         gap: 20px;
-        background: burlywood;
+        background: rgb(222, 135, 218);
         font-family: 'Heebo';
     }
     .left-content-container{
@@ -169,11 +169,23 @@ body {
       grid-column: 2/7;
       background-color: blueviolet;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       align-items: center;
+      gap: 35px;
     }
     .vertical-line{
       width: 1px;
       height: 20px;
       background-color: black;
+    }
+    .text-content{
+      font-family:'Heebo';
+      font-size: 16px;
+      width: 370px;
+    }
+    .right-content-container{
+        grid-column: 7/12;
+      
+        background: rgb(20, 196, 20);
+        
     }
