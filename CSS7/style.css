@@ -221,3 +221,7 @@ body {
         background:#83abd6;
         height: 180px;
     }
+    .work-item-text-container{
+        grid-column: 5/8;
+        background:#1b7fea;
+    }
