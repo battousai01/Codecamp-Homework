@@ -217,5 +217,7 @@ body {
         font-family: 'Heebo';
     }
     .work-item-image-container{
-        grid-column: 2/7;
+        grid-column: 2/5;
+        background:#83abd6;
+        height: 180px;
     }
