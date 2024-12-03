@@ -189,3 +189,33 @@ body {
         display: flex;
         justify-content: center;
     }
+    /*Work Container*/
+    .Work-container{
+        height: 800px;
+        background:#00A8CC;
+    }
+    .Topwork-container{
+        margin: 0 60px;
+        background: brown;
+        font-family: 'Heebo';
+        font-size: 22px;
+        color:#21243D;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        height: 95px;
+    }
+    .Topwork{
+        grid-column: 2/4;
+    }
+    .work-item-container{
+        margin: 0 60px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 20px;
+        background: rgb(222, 135, 218);
+        font-family: 'Heebo';
+    }
+    .work-item-image-container{
+        grid-column: 2/7;
+    }
