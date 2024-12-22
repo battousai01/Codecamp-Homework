@@ -1,4 +1,44 @@
+/*Font*/
+.heebo-medium {
+  font-family: "Heebo", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.heebo-bold {
+  font-family: "Heebo", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.heebo-regular {
+  font-family: "Heebo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/*Font-Size*/
+.F16 {
+  font-size: 16px;
+}
+.F20 {
+  font-size: 20px;
+}
+.F44{
+  font-size: 44px;
+}
+/*Color*/
+.Black{
+  color:black;
+}
+/*Background-Color*/
+.FF6464{
+  background-color: #FF6464;
+}
+/*Navbar*/
 .navbar-toggler {
     border: none; /* Removes the border */
     box-shadow: none; /* Removes any shadow around the button */
   }
+ /*Info*/
+ 
