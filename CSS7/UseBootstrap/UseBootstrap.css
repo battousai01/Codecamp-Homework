@@ -24,12 +24,18 @@
 .F20 {
   font-size: 20px;
 }
+.F22{
+  font-size: 22px;
+}
 .F44{
   font-size: 44px;
 }
 /*Color*/
 .Black{
   color:black;
+}
+.Green{
+  color:#00A8CC;
 }
 /*Background-Color*/
 .FF6464{
@@ -40,5 +46,22 @@
     border: none; /* Removes the border */
     box-shadow: none; /* Removes any shadow around the button */
   }
+
+  /*Link*/
+  .no-underline {
+    text-decoration: none;
+  }
  /*Info*/
+ .Info-header {
+   
+  /*word-wrap:break-all; /* Allows long words to break and wrap onto the next line */
+  /*white-space: normal; /* Allows text to wrap normally */
+  /*<h2 class="mb-4 Info-header F44 Black">Hi, I am John,<span class="break-word"> Creative Technologist</span></h2>
+overflow-wrap: break-word; /* Ensures that long words will break to the next line */
+  line-height: 60px; /* Sets the line height */
+}
+.break-word {
+  display: inline-block; /* Allows the span to break onto a new line */
+  white-space: normal; /* Allows text to wrap normally */
+}
  
