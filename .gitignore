@@ -1,0 +1,11 @@
+# Ignore all log files
+*.log
+
+# Ignore a specific file
+secrets.env
+
+# Ignore a directory
+D:\Homework\Codecamp-Homework
+
+# Ignore all `.env` files in any folder
+*.env
