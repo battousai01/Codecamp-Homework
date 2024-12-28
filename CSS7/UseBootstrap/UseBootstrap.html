@@ -13,8 +13,9 @@
 </head>
 <body>
   <!-- Navigation Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+<section class="Navbar">   
+  <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle">
+    <div class="container col-">
       <!-- Navbar Brand -->
       
 
@@ -25,10 +26,10 @@
 
       
       <!-- Collapsible content -->
-      <div class="collapse navbar-collapse col-md-12 "id="navbarNav">
-        <ul class="navbar-nav   heebo-medium F20 black offset-md-9">
+      <div class="collapse navbar-collapse justify-content-end "id="navbarNav">
+        <ul class="navbar-nav d-flex   justify-content-evenly heebo-medium F20 black ">
           <li class="nav-item ">
-            <a class="nav-link " href="#">Work</a>
+            <a class="nav-link " href="#">Works</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Blog</a>
@@ -38,11 +39,27 @@
           </li>
         </ul>
       </div>
+      <!--<div class=" collapse navbar-collapse " id="navbarNav">
+        <div class="row col-md-12">
+            <div class="col-md-8">
+            </div>
+            <div class="col-md-1 heebo-medium F20 black">  
+              <a class="nav-link" href="#">Works</a>
+            </div>    
+            <div class="col-md-1 heebo-medium F20 black">  
+              <a class="nav-link" href="#">Blog</a>
+            </div>     
+            <div class="col-md-1 heebo-medium F20 black">  
+              <a class="nav-link" href="#">Contact</a>
+            </div> 
+        </div>
+    </div>-->
     </div>
   </nav>
+</section>  
   <!--Pesonal Info-->
   <section class="personal-info py-5 bg-light">
-    <div class="container">
+    <div class="container bg-info-subtle">
       
       <div class="row">
         <!-- Info Column -->
@@ -52,7 +69,7 @@
           </p>    
         </div>
          <!-- Image Column -->
-        <div class="col-md-4 text-center mb-4">
+        <div class="col-md-4 text-end mb-4">
           <svg
           width="243"
           height="243"
@@ -91,19 +108,32 @@
       </div>
       <div class=".btn ">
         <button type="button" class="btn btn-primary  F20  heebo-medium rounded-0 border-0 FF6464">Download Resume</button>
-
       </div> 
     </div>
   </section>
-  <section class=" container work-topic">
-    <div class="row">
-      <div class="col-md-12 d-flex justify-content-between  ">
-        <p class="heebo-regular F22">Recent posts</p>  
-        <a href="https://example.com" class="heebo-regular F16 Green no-underline">View all</a>
-        
+  <section class="work-topic container">
+      <div class="row"> 
+        <div class="col-md-11 d-flex justify-content-between  ">
+          <p class="heebo-regular F22">Recent posts</p>  
+          <a href="https://example.com" class="heebo-regular F16 Green no-underline">View all</a>         
+        </div>
       </div>
+  </section>
+  <section class="work container">
+    <div class="row">
+      <div class="work-wrap bg-info-subtle col-md-11 
+      d-flex flex-row">
+         <div class="work-item col-md-5">
+          <h2 class="heebo-bold F26">Making a design system from scratch</h2>
+        </div>   
+        <div class="work-item col-md-5">
+          <h2 class="heebo-bold F26">Making a design system from scratch</h2>
+        </div>   
+      </div>  
     </div>
   </section>
+
+
   <!-- Include Bootstrap Bundle with JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
