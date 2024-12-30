@@ -7,7 +7,9 @@
   background-color: brown;
   background-clip: content-box;
 }
-
+.md1{
+  background: green !important;
+}
 /*Font*/
 .heebo-medium {
   font-family: "Heebo", serif;
@@ -30,6 +32,9 @@
 /*Font-Size*/
 .F16 {
   font-size: 16px;
+}
+.F18{
+  font-size: 18px;
 }
 .F20 {
   font-size: 20px;
@@ -78,6 +83,14 @@ overflow-wrap: break-word; /* Ensures that long words will break to the next lin
   white-space: normal; /* Allows text to wrap normally */
 }
 /*Work*/
-.work-item{
-  
+.work-wrap-inner{
+  width: 95%;
+}
+.vertical-line {
+  border: 1px solid #000; /* Adjust the color and width as needed */
+  height: 25px; /* Full height */
+  width: 2px;
+}
+.work-header{
+  background-color: green;
 }
