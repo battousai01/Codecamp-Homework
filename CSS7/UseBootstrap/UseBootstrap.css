@@ -1,16 +1,16 @@
 /*Grid Display*/
-.row [class*='col-'] {
+/*.row [class*='col-'] {
   background-color: #ffeeee;
   background-clip: content-box;
-}
-.navbar-nav a{
+}*/
+/*.navbar-nav a{
   background-color: brown;
   background-clip: content-box;
 }
-
-.md1{
+*/
+/*.md1{
   background: green !important;
-}
+}*/
 /*Font*/
 .heebo-medium {
   font-family: "Heebo", serif;
@@ -79,18 +79,69 @@
 .F000{
   background-color: #000 !important;
 }
+.FFFFFF{
+  background-color:#FFFFFF;  
+}
+.EDF7FA{
+  background-color:#EDF7FA;
+}
+.G0A9B22{
+  background-color:#0A9B22;
+}
+.GF5F5F5{
+  background-color:#0b30ab;
+}
 /*Width*/
 .W100{
   width: 100px;
 }
+@media (min-width: 768px) {
+  .W420PX {
+    width: 25rem;
+  }
+}
 .W90p{
   width: 95%;
 }
+.W100p{
+  width: 100%;
+}
 /*Height*/
+
+.H295PX{
+  height: 18rem;
+  }
+@media (min-width: 770px) {
+.H400PX{
+  height: 25rem;
+  }
+} 
+@media (max-width: 768px) {
+.H650PX{
+  height: 45rem;
+  }
+}  
+.H90P{
+  height: 90%;
+}
 .H180{
   height: 188px;
 }
+
+  .H400PX {
+    height: 25rem;
+  }
+
 /*Margin*/
+.M0{
+  margin: 0px;
+}
+@media (min-width: 768px) {
+  .mdmauto {
+    margin-top: 135px !important;
+  }
+}
+
 
   @media (min-width: 768px) {
     .mt-lg-custom {
@@ -101,10 +152,32 @@
 .MT195{
   margin-top: 195px;
 }
+.mauto{
+  margin: 0 auto;
+}
+/*Padding*/
+.P0{
+  padding: 0px;
+}
 /*Word*/
 .word-break{
   word-break: break-all;
   word-wrap: break-word;
+}
+/*Display*/
+
+@media (min-width: 768px) {
+  .dmd-none {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .justify-content-MD-between {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 /*Navbar*/
 .navbar-toggler {
@@ -152,4 +225,15 @@ svg {
   object-fit: contain; /* or 'cover', depending on your desired result */
   padding: 0;
   margin: 0;
+}
+/*Layout*/
+@media (min-width: 768px) {
+  .flex-md {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+span{
+  margin: 0px;
+  padding: 0px;
 }
