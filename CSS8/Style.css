@@ -1,0 +1,26 @@
+img{
+    border: 1px solid blueviolet;
+    width: 240px;
+    height: 80px;
+}
+p{
+    color: blueviolet;
+}
+/*Background*/
+.gray{
+    background-color: #d4cbcb;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 600px) {
+    .header-container {
+      width: 80%;
+    }
+  }
