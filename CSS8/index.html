@@ -6,13 +6,39 @@
     <title>Facebook  เข้าสู่ระบบหรือสมัครสมาชิก</title>
     <link rel="stylesheet" href="Style.css">
 </head>
-<body class="gray flex">
-    <div class="header-container flex">
-        <div class="Logo=container">
-            <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="facebook" width="" height="" > 
-        </div> 
-        <p>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</p>   
-    </div> 
+<body class="Bgray flex">
     
+        <div class="header-container ">
+            <div class="Logo-container">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="facebook" width="" height="" > 
+            </div> 
+            <p class="black F20px">Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</p>   
+        </div> 
+        <div class="form-container flex-row">
+            <form action="/submit" method="post" class=" ">
+                <!-- Text input -->
+                
+                <input class="form-control" type="text" id="name" name="name" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ" required>
+                
+
+                <!-- Password input -->
+                
+                <input class="form-control" type="password" id="password" name="password" placeholder="รหัสผ่าน" required>
+                
+
+                
+                <!-- Submit button -->
+                <button class="form-control F15px Bblue white" type="submit">เข้าสู่ระบบ</button>
+                
+                <!-- Reset button -->
+                <a href="#" class="blue">ลืมรหัสผ่านใช่หรือไม่</a>
+                
+                <hr>
+                <!--New Account button-->
+                <button class="new-account Bgreen white" type="submit">สร้างบัญชีใหม่</button>
+            </form>
+        
+            <div class="footer-container"><P class="black"><b>สร้างเพจ</b> สำหับบุคคลที่มีชื่อเสียง วงดนตรี หรือธุรกิจ</P></div>
+        </div>    
 </body>
-</html>
+</html> 
