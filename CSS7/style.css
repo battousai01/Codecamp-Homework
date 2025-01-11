@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    width: 1152px;
+   /* width: 1152px;*/
     /*height: 2041px;*/
     background: white;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 /*Personal Info*/
 .personal-info-container{
@@ -298,27 +298,32 @@ body {
     }
     /*Footer*/
     .Footer-section{
-        width:1152px;
+        /*width:1152px;*/
         height: 265px;
         display: flex;
+        justify-content: center;
         align-items: flex-end;
         /*background-color: aquamarine;*/
+        /*border: 1px solid brown;*/
     }
     .Footer-container{
-        width: 1152px;
+        /*width: 1152px;*/
         height: 180px;
         /*background-color: #00A8CC;*/
-        text-align: center  ;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
     }
     .icon-container {
-      
+        height: auto;
         margin: 0 60px;
         display: flex;
         justify-content: center;
-        align-items: center;
-        /*grid-template-columns: repeat(12, 1fr);*/
+        align-items: flex-end;
         gap: 35px;
-       /* background: rgb(222, 135, 218);*/
+        /*background: rgb(222, 135, 218);*/
         font-family: 'Heebo';
    }
    .text-footer{
