@@ -1,0 +1,86 @@
+/*Text*/
+p,h3{
+    color:white;
+}
+/*Color*/
+.White{
+    color:white;
+}
+body{
+    
+    margin: 0;
+    padding: 0;
+}
+.Main-container{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp');
+    
+}   
+/*Navigation*/
+.Navigation-container{
+    width: 100%; 
+    height: 8.23%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: aqua;
+}
+.Text-Icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.Front-Navigation-Container{
+    width: 75%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid brown;
+}
+.Front-Navigation-Container li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.Front-Navigation-Container a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.Back-Navigation-Container{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+    border: 1px solid brown;
+}
+.Icon-container{
+    height:100%;
+    width:auto;
+    border: 1px solid green;
+}
+.Link-container{
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Link-icon{
+    /*width:5.5rem;
+    height: 40px;*/
+    font-size: 1.6rem;
+    color: white;
+    /*background-color: blue;*/
+}
+svg{
+    width: 100%;
+    height: 100%; 
+}
