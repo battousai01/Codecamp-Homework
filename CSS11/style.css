@@ -14,7 +14,10 @@ body{
 .Main-container{
     height: 100vh;
     width: 100vw;
-    background-image: url('https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+                        ,url('https://tinder.com/static/build/ac062d1b428513b9c13d11026d330e34.webp');
+    background-size: cover;
+    background-position: center;
     
 }   
 /*Navigation*/
@@ -23,7 +26,8 @@ body{
     height: 8.23%;
     display: flex;
     justify-content: flex-start;
-    background-color: aqua;
+    position: relative;
+    background-color: rgba(0, 0, 0.8, 0.5);
 }
 .Text-Icon-container{
     display: flex;
@@ -35,31 +39,46 @@ body{
     width: 75%;
     height: 100%;
     margin: 0;
+    padding: 0 1rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around ;
     align-items: center;
-    gap: 0.5rem;
-    border: 1px solid brown;
+    gap: 0.8rem;
+    /*background-color: steelblue;*/
+    /*border: 1px solid brown;*/
 }
 .Front-Navigation-Container li{
     list-style: none;
     margin: 0;
     padding: 0;
+     
 }
 .Front-Navigation-Container a{
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    /*font-size: 1.5rem;*/
+}
+.mobile-sidebar{
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    /*background-color: brown;*/
+    z-index: 95;
+}
+.hideOnDesktop{
+    display: none;
 }
 .Back-Navigation-Container{
     width: 25%;
     height: 100%;
+    position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     font-size: 1.5rem;
     gap: 0.5rem;
-    border: 1px solid brown;
+    background-color: none;
+    /*border: 1px solid brown;*/
 }
 .Icon-container{
     height:100%;
@@ -73,14 +92,265 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .Link-icon{
-    /*width:5.5rem;
-    height: 40px;*/
-    font-size: 1.6rem;
-    color: white;
-    /*background-color: blue;*/
+    width: 8rem;
+    height: 2.221rem;
+    font-size: 1rem;
+    display:block;
+   /* background-color: blue;*/
 }
-svg{
+.Link{
+    /*font-size:clamp(1rem, 0.5vw, 2rem);*/
+    font-size: 1.3rem;
+}
+.display-button{
+    display: none;
+}
+.hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    /*background-color: white;*/
+    transition: transform 0.3s ease;
+  }
+  .menu.active {
+    display: flex; /* Show menu when active */
+  }
+.Link-icon svg{
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
+.language-icon-container{
+    height: 100%;
+    width: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid green;*/
+}
+.language-button{
+    min-width:auto;
+    height: 2.625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    /*  background-color: beige;*/
+    border: none;
+}
+.language-container{
+    width:6.954rem;
+    height: 2.625em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+}
+
+
+.language{
+    font-size: 1.2rem;
+}
+.Login-container{
+    width: 7.988rem;
+    height: 1.625rem;
+    margin-right: 0.9rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius:25px;
+    text-align: center;
+}
+.Login{
+    font-size: 1.5rem; 
+    min-width: 120px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+/*Main-Content*/
+.Main-Content-Wrap{
+    width:100%;
+    height: 91.77%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid green;*/
+}
+.Main-Content-Header{
+    font-size: 6.5rem;
+    color: white;
+}
+.Build-Account-Button{
+    padding: .5rem 3rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    background-color: #f7070b;
+    border:none;
+    color:white;
+}
+.Sign-Up-Button{
+    display: none;
+    padding: .5rem 3rem;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+}
+.language-button-mobile{
+    display: none;
+    padding: .5rem 3rem;
+    font-size: small;
+    border-radius: 25px;
+    background-color: transparent;
+    border:1px solid white;
+    color:white;
+}
+ @media(max-width: 1024px){
+    .Link{
+        font-size: 1rem;
+    }
+    .Front-Navigation-Container{
+        width: 75%;
+    }
+    .Back-Navigation-Container{
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly   ;
+        align-items: center;
+        gap:0;
+        
+    }
+    .Login-container{
+        width: 5.988rem;
+        height: 1.625rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius:25px;
+        text-align: center;
+    }
+    .Login{
+        font-size: 1rem;
+    }
+ }
+
+ @media (max-width: 970px){
+    .Navigation-container{
+        position: relative;
+    }
+    .Front-Navigation-Container{
+        margin: 0;
+        width: 65%;
+        position: relative;
+        justify-content: space-between;
+    }
+    .Back-Navigation-Container{
+        width: 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .mobile-sidebar{
+        position: absolute;
+        width:50%;
+        top:100%;
+        left:0%;
+        
+        display: flex;
+        flex-direction: column;
+        background-color: none;
+    }
+    .language-button{
+        
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        min-width: auto;
+    }
+    .Login{
+        font-size: 1.1rem;
+    }
+    .Link{
+        display:none;
+    }
+    .display-button{
+        display: block;
+    }
+    .Login-container{
+        width: 6.5rem;
+        height: 1.2rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius:25px;
+        text-align: center;
+    }
+    
+    .hideOnDesktop{
+        display: block;
+        font-size: 1.1rem;
+    }
+    
+ } 
+ @media(max-width:320px){
+    .Front-Navigation-Container{
+        width: 100%;
+    }
+    .Back-Navigation-Container{
+        display: none;
+    }/*
+    .Login{
+        font-size: 1rem;
+    }
+    .Login-container{
+        width: 5.988rem;
+        height: 1.625rem;
+        padding: 0.5rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius:25px;
+        text-align: center;
+    }
+    .Link{
+        display:none;
+    }
+    .display-button{
+        display: block;
+    }
+    .hideOnDesktop{
+        display: block;
+        font-size: 1.1rem;
+    }*/
+    .Main-Content-Header{
+        font-size: 4.5rem;
+    }
+    .Sign-Up-Button{
+        display: flex;
+    }
+    .language-button-mobile{
+        display: flex;
+    }
+    .language{
+        font-size: 1rem;
+    }
+ }
