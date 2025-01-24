@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width:100vw;
+}
+/*Navigation*/
+.nav-maincontainer {
+    width:100%;
+    height: 10% ;
+    display:flex;
+    justify-content: center;
+    background-color: #000;
+}
+.nav-container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    
+    /*background-color:beige;*/
+}
+.Front-Navigation-Container{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*background-color: blue;*/
+}
+.Behind-Navigation-Container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /*background-color: red;*/
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+li{
+    display: flex;
+    justify-content: space-around;
+}
+a{
+    padding: 0.5em 1em;
+    border-radius: 30px;
+    transition: box-shadow 0.3s ease, background 0.3s ease; /* Smooth transition */
+}
+li:not(.Icon) a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+li a:hover{
+  background: #2d2b2b; /* Lighter background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  
+}
+.Icon{
+    font-size:1.8rem;
+    color: white;
+}
+.arrow {
+    margin-left: 5px; /* Add spacing between text and arrow */
+    font-size: 0.5em; /* Adjust size */
+    color:white; /* Arrow color */
+  }
+.Sign-up{
+    background-color: white;
+    color:black !important;
+}
+.main-description{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.description-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    /*justify-content: center;
+    align-items: center;*/
+    /*background-color: rgb(206, 173, 230);*/
+}
+.text-description-container{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgb(173, 182, 230);*/
+}
+.text-description{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start ;
+    color:white;
+    /*background-color: rgb(11, 71, 39);*/
+}
+.image-description{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgb(46, 70, 202);*/
+}
+.image-container{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    /*background-color: rgb(68, 16, 58);*/
+}
+.fit-picture{
+    width:100%;
+    height:100%;
+}
+/*Input*/
+.input-header{
+    margin: 1.5rem 0;
+}
+.input-container {
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Adjust width as needed */
+  }
+
+  .input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Add left padding to leave space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .input-container .iconA {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 10px; /* Position icon inside the input */
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicks on the icon */
+    color: #888; /* Icon color */
+  }
+  .input-container .iconB {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 90%; /* Position icon inside the input */
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevent clicks on the icon */
+    color: #888; /* Icon color */
+  }
+  .input-container input:focus {
+    border-color: #007BFF; /* Optional: Highlight input on focus */
+  }
+  /*Button*/
+  .price{
+    padding: 0.5rem 1.5rem;
+    border-radius: 10px;
+  }
