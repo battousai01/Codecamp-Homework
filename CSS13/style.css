@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.Header-container{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: green;*/
+}
+.Header-container h1{
+    margin-bottom: 2em;
+}
+.Main-container{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*background-color: yellow;*/
+}
+.Left-container{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /*background-color: red;*/
+}
+.heading{
+    font-size: 1.1em;
+}
+.Left-container h2{
+    margin: 2em 0;
+}
+.Left-container h3{
+    margin: 1em 0;
+}
+.Hobby-container{
+    width: 100%;
+}
+.Hobby-info-container{
+    width:100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    /*background-color: blue;*/
+}
+.Image-hobby-container{
+   width: 30%; 
+   height: 50%;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+}
+img{
+    width:100%;
+    height: 100%;
+}
+.Person-Info{
+    width: 80%;
+    height: 100%;
+    /*background-color: pink;*/
+}
+.Middle-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*background-color: blue;*/
+}
+
+.Image-container {
+    position: relative;
+    width: 50%; /* Percentage-based width */
+    padding-top: 50%; /* Create a square aspect ratio */
+    border-radius: 50%; /* Circular shape */
+    overflow: hidden; /* Ensures the image fits inside the circle */
+    border: 2px solid #ccc; /* Optional: Add a border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  }
+
+  .Image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the circle without distortion */
+  }
+.Right-container{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*background-color: orange;*/
+}
+.Right-container h2{
+    margin: 2em 0;
+}
+.projects-list li{
+    margin-top: 1em;
+}
+.Link{
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+    display: flex;
+    font-size: 2em;
+    justify-content: flex-start;
+    gap: 1em;
+    /*background-color: aquamarine;*/
+}
+.Link li{
+    list-style-type: none;
+}

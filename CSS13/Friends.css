@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* background-color: blue;*/
+}
+/*Friend-list*/
+.Friend-List-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /*background-color: blueviolet;*/
+}
+.List-container{
+    width: 80%;
+    height: 100%;
+    /*background-color: beige;*/
+}
+.Inner-card{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1em;
+    display: flex;
+    gap: 2em;
+    /*background-color: aquamarine;*/
+}
+.Image-container{
+    width: 5%;
+    height: 10%;
+   /* background-color: rgb(19, 140, 25);*/
+}
+.Info-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    gap:1em;
+   /* background-color: brown;*/
+}
+/*Footer*/
+footer{
+    position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%; /* Ensure it spans the full width */
+            height: 15%;
+            background-color: #c9c2c2;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+}
+
+
+li {
+    margin: 10px 0; /* Add spacing between links */
+    list-style: none;
+    margin-right: 2em;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #2a428b; /* Default color */
+    font-size: 25px; /* Adjust font size */
+    display: flex;
+    align-items: center; /* Align icon and text */
+    justify-content: space-evenly;
+}
+
+a:hover {
+    color: #007BFF; /* Add hover color */
+}
